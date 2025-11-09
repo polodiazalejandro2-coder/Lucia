@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lucía Linde — Portafolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HERO PRINCIPAL: -->
+  <section id="hero" class="hero">
+    <img src="images\IMG-20241002-WA0321.jpg" alt="Lucía Linde" class="hero-bg">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-name">
+        <span class="first">Lucía</span> <span class="last">Linde</span>
+      </h1>
+      <p class="hero-subtitle">Psicóloga · Organizadora de eventos (UCV) · Miss Perú La Libertad 2026</p>
+      <!-- Menú mínimo:  -->
+      <nav class="hero-nav" aria-label="Navegación principal">
+        <a data-scroll href="#intro">Editorial</a>       
+        <a data-scroll href="#about">Sobre mí</a>
+        <a data-scroll href="#photos">Fotos</a>
+        <a data-scroll href="#portfolio">Proyectos</a>
+        <a data-scroll href="#logros">Logros</a>
+      </nav>
+  </section>
+
+  <!-- EDITORIAL INTRO: split media + text  -->
+  <section id="intro" class="intro container">
+    <div class="intro-media reveal">
+      <img src="images\Screenshot_20250729_064557_X.jpg" alt="Editorial" />
+    </div>
+    <div class="intro-text reveal">
+      <h2>Elegancia con propósito</h2>
+      <p>
+        Estudio Psicología en la Universidad César Vallejo y participo en la organización de eventos, me gusta crecer a
+        través de cada experiencia y mantener un equilibrio entre lo académico y lo personal, participo en Miss Perú La
+        Libertad como una oportunidad para seguir aprendiendo y mostrar lo mejor de mí.
+      </p>
+      <p class="muted">Jennifer Lucia Linde Morales</p>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="about" class="section container">
+    <div class="split">
+      <div class="text reveal">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy una persona tranquila, dedicada y con muchas metas por alcanzar, me gusta aprender, asumir nuevos retos y
+          encontrar equilibrio entre mi formación, mi trabajo y mis sueños, creo que cada experiencia es una oportunidad
+          para mejorar y seguir creciendo
+        </p>
+        <ul class="info-list">
+          <li><strong>Universidad:</strong> Universidad César Vallejo (UCV)</li>
+          <li><strong>Rol:</strong> Organizadora de eventos</li>
+          <li><strong>Título:</strong> Psicóloga</li>
+        </ul>
+      </div>
+
+      <aside class="card gold-border reveal">
+        <h3>Servicios destacados</h3>
+        <ul>
+          <li>Asesoría psicológica</li>
+          <li>Coordinación de eventos</li>
+          <li>Charlas y talleres</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOTOS -->
+  <section id="photos" class="section container">
+    <h2 class="reveal">Galería</h2>
+    <div class="gallery gallery-grid" id="gallery">
+      <figure class="photo reveal" tabindex="0">
+        <img src="images\IMG-20240927-WA0124.jpg" alt="Descripción foto 1"
+          data-caption="Sesión editorial — Trujillo 2025">
+      </figure>
+
+      <figure class="photo reveal" tabindex="0">
+        <img src="images\IMG-20240927-WA0077.jpg" alt="Descripción foto 2" data-caption="Runway / Evento">
+      </figure>
+
+      <figure class="photo reveal" tabindex="0">
+        <img src="images\IMG-20240825-WA0003.jpg" alt="Descripción foto 3" data-caption="Retrato profesional">
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="portfolio" class="section container">
+    <h2 class="reveal">Proyectos seleccionados</h2>
+    <div class="projects-grid">
+      <article class="project reveal">
+        <h3>Dia de la juventud — Evento 2025</h3>
+        <p>Coordinación general, curaduría de actividades y comunicación.</p>
+      </article>
+
+      <article class="project reveal">
+        <h3>Taller: Habilidades socioemocionales</h3>
+        <p>Diseño curricular y facilitación.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- LOGROS -->
+  <section id="logros" class="section container">
+    <h2 class="reveal">Logros & Reconocimientos</h2>
+    <div class="achievements">
+      <article class="reveal">
+        <h4>Miss Perú — La Libertad</h4>
+        <p>Representante oficial— 2026</p>
+      </article>
+
+      <article class="reveal">
+        <h4>Organización UCV</h4>
+        <p>Coordinación y producción de eventos sociales</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MODAL DE IMAGEN (galería) -->
+  <div id="img-modal" class="img-modal" aria-hidden="true" role="dialog" aria-label="Visor de imagenes">
+    <button id="modal-close" class="modal-close" aria-label="Cerrar visor">&times;</button>
+
+    <div class="modal-inner">
+      <img id="modal-img" src="" alt="">
+      <div id="modal-caption" class="modal-caption"></div>
+
+      <button id="modal-prev" class="modal-nav" aria-label="Imagen anterior">‹</button>
+      <button id="modal-next" class="modal-nav" aria-label="Imagen siguiente">›</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-centered">
+      <p>© <span id="year"></span> Lucía Linde</p>
+
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/luciallinde/" target="_blank" class="footer-icon" aria-label="Instagram">
+          <img src="images\dea9066768b178b4ea095e6b95efada7.jpg" alt="Instagram">
+          <span>@luciallinde</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
